@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0 20px;
+}
+h1 {
+  font-size: 18px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+hr {
+  height: 1px;
+  background-color: #000;
+  width: 500px;
+  border: none;
+  margin: 20px 0;
+}
+.loader {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border: 1px solid #000;
+}
+.loader2 {
+  border: 1px solid #000;
+  display: inline-block;
+  line-height: 30px;
+  padding: 0 10px;
+  position: relative;
+  cursor: pointer;
+}
+.loader2 .pic {
+  vertical-align: middle;
+}
+.loader2.active {
+  cursor: default;
+}
+.desc {
+  margin: 20px 0 10px;
+  max-width: 500px;
+}
+.leftpic .pic {
+  margin-right: 10px;
+}
+.rightpic .pic {
+  margin-left: 10px;
+}
+.ajax_loading {
+  padding-left: 20px;
+}
+.hv_ajax_loader.ajax_loading_start {
+  background: rgba(255, 255, 255, 0.5);
+  display: block;
+}
+.hv_ajax_loader.ajax_loading_start .pic {
+  display: none;
+}

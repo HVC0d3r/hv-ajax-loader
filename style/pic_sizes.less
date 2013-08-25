@@ -1,0 +1,36 @@
+
+/*
+	Declaring some picture sizes for the tutorial.
+	These'll be used for absolute positioned div elements.
+*/
+.hv_ajax_loader {
+	
+	&.pic15 {
+		.pic(15px, 15px);
+	}
+	
+	&.pic20 {
+		.pic(20px, 20px);
+	}
+	
+	&.pic50 {
+		.pic(50px, 50px);
+	}
+
+}
+
+/* A mixin to make the code a bit cleaner. */
+.pic (@w, @h) when (@w>0) and (@h>0) {
+	
+	.pic, & {
+		width: @w;
+		height: @h;
+	}
+	&.absolute {
+		.pic {
+			margin-left: -@w/2;
+			margin-top: -@h/2;
+		}
+	}
+
+}

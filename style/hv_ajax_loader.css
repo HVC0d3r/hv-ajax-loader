@@ -1,0 +1,94 @@
+/*
+	Include a helper class for picture classes.
+*/
+/*
+	Declaring some picture sizes for the tutorial.
+	These'll be used for absolute positioned div elements.
+*/
+.hv_ajax_loader.pic15 .pic,
+.hv_ajax_loader.pic15 {
+  width: 15px;
+  height: 15px;
+}
+.hv_ajax_loader.pic15.absolute .pic {
+  margin-left: -7.5px;
+  margin-top: -7.5px;
+}
+.hv_ajax_loader.pic20 .pic,
+.hv_ajax_loader.pic20 {
+  width: 20px;
+  height: 20px;
+}
+.hv_ajax_loader.pic20.absolute .pic {
+  margin-left: -10px;
+  margin-top: -10px;
+}
+.hv_ajax_loader.pic50 .pic,
+.hv_ajax_loader.pic50 {
+  width: 50px;
+  height: 50px;
+}
+.hv_ajax_loader.pic50.absolute .pic {
+  margin-left: -25px;
+  margin-top: -25px;
+}
+/* A mixin to make the code a bit cleaner. */
+/* Absolutely positioned loader. */
+.hv_ajax_loader.absolute {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  background: rgba(255, 255, 255, 0.5);
+}
+.hv_ajax_loader.absolute.active {
+  display: block;
+}
+.hv_ajax_loader.absolute .pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: url(hv_ajax_loader.gif);
+  background-size: cover;
+}
+.hv_ajax_loader.absolute.left .pic {
+  left: 0;
+  margin-left: 0;
+}
+.hv_ajax_loader.absolute.top .pic {
+  top: 0;
+  margin-top: 0;
+}
+.hv_ajax_loader.absolute.right .pic {
+  left: auto;
+  right: 0;
+  margin-left: 0;
+}
+.hv_ajax_loader.absolute.bottom .pic {
+  top: auto;
+  bottom: 0;
+  margin-bottom: 0;
+}
+.hv_ajax_loader.absolute.inline .pic {
+  top: auto;
+  bottom: 0;
+  margin-bottom: 0;
+}
+/* Inline loader. */
+.hv_ajax_loader.inline.pic {
+  background: url(hv_ajax_loader.gif);
+  background-size: cover;
+  display: none;
+}
+.hv_ajax_loader.inline.pic.active {
+  display: inline-block;
+}
+/* The simplest inline loader. */
+.hv_ajax_loader_pic {
+  display: none;
+}
+.hv_ajax_loader_pic.active {
+  display: inline-block;
+}
