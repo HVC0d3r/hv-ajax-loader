@@ -24,34 +24,34 @@ The logic:
  
 Configuration options:
 
-  delay: false
-    The showing of the effect can be delayed. (msec) If the switch off method is
-    called before the delay triggers the effect, it won't be shown.
-  
-  classes:
-    base: 'hv_ajax_loader'
-      The script will replace the '{{BASE_CLASS}}' string with this in the template.
-      Basic styling can be done here.
-      
-    start: null
-      If set, the script will add this class to the base element when calling the switch on method.
-      
-    active: 'active'
-      After the time defined in the delay parameter elapsed, the class defined here will be added to the base element.
+    delay: false
+      The showing of the effect can be delayed. (msec) If the switch off method is
+      called before the delay triggers the effect, it won't be shown.
     
-    custom: null
-      If set, this class will be added to the base element upon initializing.
-      Useful if the page contains multiple different ajax loaders.
+    classes:
+      base: 'hv_ajax_loader'
+        The script will replace the '{{BASE_CLASS}}' string with this in the template.
+        Basic styling can be done here.
+        
+      start: null
+        If set, the script will add this class to the base element when calling the switch on method.
+        
+      active: 'active'
+        After the time defined in the delay parameter elapsed, the class defined here will be added to the base element.
       
-    parent: null
-      If set, this class will be added to the base element's parent upon initializing.
+      custom: null
+        If set, this class will be added to the base element upon initializing.
+        Useful if the page contains multiple different ajax loaders.
+        
+      parent: null
+        If set, this class will be added to the base element's parent upon initializing.
+      
+    template: '<img class="{{BASE_CLASS}}" src="style/hv_ajax_loader.gif" height="15" width="15" />',
+      The script will add this html code to the selected element.
     
-  template: '<img class="{{BASE_CLASS}}" src="style/hv_ajax_loader.gif" height="15" width="15" />',
-    The script will add this html code to the selected element.
-  
-  insert: 'append'
-    'append' or 'prepend' the loader in the selected element.
-    It only matters when the added element is inline, not absolute positioned.
+    insert: 'append'
+      'append' or 'prepend' the loader in the selected element.
+      It only matters when the added element is inline, not absolute positioned.
 
     
 Some example were set up in the index file.
