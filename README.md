@@ -6,7 +6,7 @@ A small jQuery plugin to help visualize ajax loading.
 
 The basic idea of this project is to be able to switch on/off ajax loading effect(s) easily when needed.
 
-The javascript and the css are completely separated. The script won't even use a 'display: none' code.
+The javascript and the css are completely separated. The script won't even use a `display: none` code.
 
 
 
