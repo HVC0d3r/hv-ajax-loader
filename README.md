@@ -12,14 +12,14 @@ The javascript and the css are completely separated. The script won't even use a
 
 The logic:
 
-  initiate the plugin: $(selector).hv_ajax_loader( configuration );
-    This will add the template html to the selected element.
-    
-  switch on loader effect when loading starts: $(selector).hv_ajax_loader( 'switch', 'on' );
-    The configuration's 'active' class is added to the base element.
- 
-  switch off when the request ends: $(selector).hv_ajax_loader( 'switch', 'off' );
-    Removing the 'active' class.
+    initiate the plugin: $(selector).hv_ajax_loader( configuration );
+      This will add the template html to the selected element.
+      
+    switch on loader effect when loading starts: $(selector).hv_ajax_loader( 'switch', 'on' );
+      The configuration's 'active' class is added to the base element.
+   
+    switch off when the request ends: $(selector).hv_ajax_loader( 'switch', 'off' );
+      Removing the 'active' class.
  
  
 Configuration options:
