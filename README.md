@@ -55,4 +55,5 @@ Configuration options:
 
     
 Some example were set up in the index file.
+
 Since the script don't mess with the styling, everything can be changed through the css classes.
