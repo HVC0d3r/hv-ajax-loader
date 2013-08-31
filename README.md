@@ -8,6 +8,8 @@ The basic idea of this project is to be able to switch on/off ajax loading effec
 
 The javascript and the css are completely separated. The script won't even use a `display: none` code.
 
+Online demo:
+ - http://hubertviktor.com/_git/hv-ajax-loader/
 
 
 The logic:
