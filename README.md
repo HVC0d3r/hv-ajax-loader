@@ -1,5 +1,5 @@
-hv-ajax-loader
-==============
+# hv-ajax-loader
+[![Project Status](http://stillmaintained.com/ZeeCoder/hv-ajax-loader.png)](http://stillmaintained.com/ZeeCoder/hv-ajax-loader)
 
 A small jQuery plugin to help visualize ajax loading.
 
